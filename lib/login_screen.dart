@@ -28,7 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
     try {
       final user = users.firstWhere(
-            (user) => user['email'] == email && user['password'] == password,
+        (user) => user['username'] == email && user['PASSWORD'] == password,
         orElse: () => {},
       );
 
@@ -42,9 +42,9 @@ class _LoginScreenState extends State<LoginScreen> {
         await prefs.setString('email', email);
         loggedInEmail = email;
 
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text("Login successful")),
-        );
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(const SnackBar(content: Text("Login successful")));
 
         Navigator.pushReplacement(
           context,
@@ -52,9 +52,9 @@ class _LoginScreenState extends State<LoginScreen> {
         );
       }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text("Login failed: $e")),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text("Login failed: $e")));
     } finally {
       setState(() => isLoading = false);
     }
@@ -86,7 +86,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     labelText: "Email",
                     border: OutlineInputBorder(),
                   ),
-                  validator: (value) => value!.isEmpty ? "Enter your email" : null,
+                  validator: (value) =>
+                      value!.isEmpty ? "Enter your email" : null,
                 ),
                 const SizedBox(height: 20),
 
@@ -98,7 +99,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     labelText: "Password",
                     border: OutlineInputBorder(),
                   ),
-                  validator: (value) => value!.isEmpty ? "Enter your password" : null,
+                  validator: (value) =>
+                      value!.isEmpty ? "Enter your password" : null,
                 ),
                 const SizedBox(height: 30),
 
@@ -106,20 +108,26 @@ class _LoginScreenState extends State<LoginScreen> {
                 isLoading
                     ? const Center(child: CircularProgressIndicator())
                     : SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    onPressed: _login,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue[900],
-                      padding: const EdgeInsets.symmetric(vertical: 14),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                    ),
-                    child: const Text(
-                      "Login",
-                      style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                ),
+                        width: double.infinity,
+                        child: ElevatedButton(
+                          onPressed: _login,
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.blue[900],
+                            padding: const EdgeInsets.symmetric(vertical: 14),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                          child: const Text(
+                            "Login",
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
                 const SizedBox(height: 20),
 
                 // Signup Option
@@ -131,12 +139,17 @@ class _LoginScreenState extends State<LoginScreen> {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (_) => const SignupScreen()),
+                          MaterialPageRoute(
+                            builder: (_) => const SignupScreen(),
+                          ),
                         );
                       },
                       child: Text(
                         "Sign up",
-                        style: TextStyle(color: Colors.blue[900], fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                          color: Colors.blue[900],
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ],
