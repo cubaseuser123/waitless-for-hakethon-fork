@@ -39,15 +39,20 @@ Storage: Shared Preferences
 
 # Getting Started
 To run this project locally, ensure you have Flutter installed. Follow these steps:
-```bash
+
 1. Clone the repository:
-    git clone https://github.com/prasadghadwaje/Waitless-For-Hakathon.git
-
+```bash
+    git clone https://github.com/prasadghadwaje/Waitless-For-Hakathon.git 
+```
 2. Navigate to the project directory:
+```bash
     cd Waitless-For-Hakathon
-
+```
 3. Install dependencies:
+```bash
     flutter pub get 
+```
 4. Run App:
+```bash
     flutter run
-
+```
