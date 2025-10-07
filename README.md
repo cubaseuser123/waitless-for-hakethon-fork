@@ -56,3 +56,17 @@ To run this project locally, ensure you have Flutter installed. Follow these ste
 ```bash
     flutter run
 ```
+# Project Output Screenshots
+Below are some screenshots from the project's user interface.
+
+- **Splash Screen**  
+  ![Splash Screen](assets/uiScreenShot/splashPage.jpg)
+
+- **Login Screen**  
+  ![Login Screen](assets/uiScreenShot/loginPage.jpg)
+
+- **Customer Home Screen**  
+  ![Customer Home Screen](assets/uiScreenShot/customerHomePage.png)
+
+- **Customer Profile Screen**  
+  ![Customer Profile Screen](assets/uiScreenShot/profilePage.png)
