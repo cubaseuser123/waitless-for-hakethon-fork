@@ -59,14 +59,14 @@ To run this project locally, ensure you have Flutter installed. Follow these ste
 # Project Output Screenshots
 Below are some screenshots from the project's user interface.
 
-- **Splash Screen**  
-  ![Splash Screen](assets/uiScreenShot/splashPage.jpg)
+## Splash Screen
+<img src="assets/uiScreenShot/splashPage.jpg" alt="Splash Screen" width="300"/>
 
-- **Login Screen**  
-  ![Login Screen](assets/uiScreenShot/loginPage.jpg)
+## Login Screen
+<img src="assets/uiScreenShot/loginPage.jpg" alt="Login Screen" width="300"/>
 
-- **Customer Home Screen**  
-  ![Customer Home Screen](assets/uiScreenShot/customerHomePage.png)
+## Customer Home Screen
+<img src="assets/uiScreenShot/customerHomePage.png" alt="Customer Home Screen" width="300"/>
 
-- **Customer Profile Screen**  
-  ![Customer Profile Screen](assets/uiScreenShot/profilePage.png)
+## Customer Profile Screen
+<img src="assets/uiScreenShot/profilePage.png" alt="Customer Profile Screen" width="300"/>
