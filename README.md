@@ -1,5 +1,5 @@
-# waitless1
-🕒 Waitless — Smart Queue & Appointment Management App
+# waitless
+- Waitless — Smart Queue & Appointment Management App
 
 # Overview
 Waitless is a Flutter-based application designed to simplify appointment and queue management for both customers and businesses.
@@ -36,4 +36,18 @@ Storage: Shared Preferences
 - Add analytics dashboard for businesses
 - Push notifications
 - Online payment integration
+
+# Getting Started
+To run this project locally, ensure you have Flutter installed. Follow these steps:
+```bash
+1. Clone the repository:
+    git clone https://github.com/prasadghadwaje/Waitless-For-Hakathon.git
+
+2. Navigate to the project directory:
+    cd Waitless-For-Hakathon
+
+3. Install dependencies:
+    flutter pub get 
+4. Run App:
+    flutter run
 
