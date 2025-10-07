@@ -1,4 +1,4 @@
-# waitless
+# waitless APP
 - Waitless — Smart Queue & Appointment Management App
 
 # Overview
@@ -15,8 +15,8 @@ It provides seamless scheduling, real-time updates, and an efficient interface f
 
 # Tech Stack
 - **Flutter:**  The primary framework used for developing the app, providing a rich set of features for mobile app development.
-Dart: The programming language used for developing the app, known for its efficiency and ease of use with Flutter.
-Storage: Shared Preferences
+- **Dartr:** The programming language used for developing the app, known for its efficiency and ease of use with Flutter.
+- **Storage:** Shared Preferences
 
 # Dependencies
 - **flutter**: The core SDK used to build the WaitLess mobile application for both Android and iOS platforms.
