@@ -1,11 +1,11 @@
-# waitless APP
+# waitless APP :
 - Waitless — Smart Queue & Appointment Management App
 
-# Overview
+# Overview :
 Waitless is a Flutter-based application designed to simplify appointment and queue management for both customers and businesses.
 It provides seamless scheduling, real-time updates, and an efficient interface for better service experiences.
 
-# Features
+# Features :
 - **User role selection (Customer / Business) :** Allows users to choose their role as either a Customer or Business owner, enabling personalized dashboards and features.
 - **Easy appointment booking:** Enables customers to book appointments quickly and conveniently with just a few taps.
 - **Real-time updates and notifications:** Provides instant updates and notifications for appointment confirmations, cancellations, and reminders.
